@@ -1,0 +1,14 @@
+PATH
+  remote: .
+  specs:
+    light_gallery_rails (0.0.1)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  light_gallery_rails!
