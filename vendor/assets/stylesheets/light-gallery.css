@@ -627,3 +627,30 @@ left: 0;
 	margin-bottom: 5px;
 	margin-top: 15px;
 }
+
+
+/*lightGallery showThumbByDefault*/
+.showThumbByDefault #lg-gallery.open .lg-slide {
+  padding-bottom: 120px;
+}
+.showThumbByDefault #lg-gallery .thumb-cont .thumb-info{
+  display:none;
+}
+/*/ actions */
+.showThumbByDefault #lg-action {
+  position: static;
+}
+.showThumbByDefault #lg-action a {
+  margin-top: -14px !important;
+  position: absolute;
+  top: 50%;
+  z-index: 9999999;
+  background-color: transparent;
+  font-size: 28px;
+}
+.showThumbByDefault #lg-action a#lg-prev {
+  left: 17px;
+}
+.showThumbByDefault #lg-action a#lg-next {
+  right: 17px;
+}
