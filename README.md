@@ -13,7 +13,7 @@ How to use lightGallery?
 Add the following code to your Gemfile:
 
 ```ruby
-gem 'light_gallery_rails', git: 'https://github.com/stNicolaas/light-gallery-rails.git'   
+gem 'light_gallery_rails', git: 'https://github.com/JoJoS003/light-gallery-rails.git'   
 ```
 
 Include the following code into your `application.js`
@@ -29,37 +29,17 @@ Include the following code into your `application.css`
 ```
 
 ### HTML Structure ###
-Create ul and li elements and add the path of the image or video inside the data-src attributes which you wish to open within the lightGallery.
+lightgallery does not force you to use any kind of markup. you can use whatever markup you want. But i suggest you to use the following markup. Here you can find the detailed examples of deferent kind of markups.
 ```html
-<ul id="lightGallery">
-  <li data-src="img/img1.jpg">
-    <img src="img/thumb1.jpg" />
-  </li>
-  <li data-src="img/img2.jpg">
-    <img src="img/thumb2.jpg" />
-  </li>
+<div id="lightgallery">
+  <a href="img/img1.jpg">
+      <img src="img/thumb1.jpg" />
+  </a>
+  <a href="img/img2.jpg">
+      <img src="img/thumb2.jpg" />
+  </a>
   ...
-</ul>
-```
-### Data attributes ###
-```html
-    <!-- the image/video source for mobile devices -->
-    <li data-responsive-src="mobile1.jpg" > </li>
-    <!-- the large version of your image/video -->
-    <li data-src="img1.jpg" > </li>
-     
-    <!-- Custom html5 video html (will be inserted same like youtube vimeo videos) -->
-    <li data-html="video html" /> </li>
-    <!-- id or class name of an object(div) which contain your html. -->
-    <li data-html="#inlineHtml" > </li>
-    
-    <!-- Custom html (Caption description comments ...) -->
-    <li data-sub-html="<h3>My caption</h3><p>My description..</p>" /> </li>
-    <!-- id or class name of an object(div) which contain your html. -->
-    <li data-sub-html="#inlineSubHtml" > </li>
-     
-    <!-- If true your src will be displayed in an iframe.. -->
-    <li data-iframe="true" data-src="http://www.w3schools.com/" > </li>
+</div>
 ```
 ### Call lightGallery! ###
 ```html

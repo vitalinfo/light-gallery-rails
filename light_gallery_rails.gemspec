@@ -13,6 +13,6 @@ Gem::Specification.new do |s|
   s.summary     = "Ruby on Rails wrapper for lightGallery https://github.com/sachinchoolur/lightGallery"
   s.description = "Ruby on Rails wrapper for lightGallery https://github.com/sachinchoolur/lightGallery"
   s.license     = "MIT"
-  s.files = Dir["{lib,vendor}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
+  s.files = Dir["{lib,app}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
 
 end
