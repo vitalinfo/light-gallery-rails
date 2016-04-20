@@ -12,11 +12,11 @@
         top: 0;
         width: 420px;
         z-index: 99999;
-        background: #fff asset-url("loading.gif") no-repeat scroll center center;
+        background: #fff asset-url("lg-loading.gif") no-repeat scroll center center;
         &.fb_iframe_widget {
             background-image: none;
             &.fb_iframe_widget_loader{
-                background: #fff asset-url("loading.gif") no-repeat scroll center center;
+                background: #fff asset-url("lg-loading.gif") no-repeat scroll center center;
             }
         }
     }
@@ -36,7 +36,7 @@
         } 
     }
     .lg-img-wrap {
-        background: asset-url("loading.gif") no-repeat scroll center center transparent;
+        background: asset-url("lg-loading.gif") no-repeat scroll center center transparent;
     }
 
     .lg-sub-html {
