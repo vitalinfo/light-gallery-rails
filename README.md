@@ -13,7 +13,7 @@ How to use lightGallery?
 Add the following code to your Gemfile:
 
 ```ruby
-gem 'light_gallery_rails', git: 'https://github.com/JoJoS003/light-gallery-rails.git'   
+gem 'light_gallery_rails', git: 'https://github.com/vitalinfo/light-gallery-rails.git'
 ```
 
 Include the following code into your `application.js`
