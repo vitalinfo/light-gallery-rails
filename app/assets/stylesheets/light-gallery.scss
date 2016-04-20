@@ -99,7 +99,7 @@
     }
 
     .lg-item {
-        background: asset-url('loading.gif') no-repeat scroll center center transparent;
+        background: asset-url("loading.gif") no-repeat scroll center center transparent;
         display: none !important; 
     }
     &.lg-css3{
@@ -130,10 +130,7 @@
     }
 
     .lg-img-wrap {
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
+        position: static;
         padding: 0 5px;
     }
 
@@ -174,6 +171,12 @@
     // Hide title div if empty
     .lg-empty-html {
         display: none;
+    }
+
+    &.lg-hide-download{
+        #lg-download{
+            display: none;
+        }
     }
 }
 .lg-backdrop{
