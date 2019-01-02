@@ -50,15 +50,23 @@
         }
     };
 
+    Fullscreen.prototype.fullscreenEnabled = function() {
+      var d = document;
+
+      return !!(d.fullscreenElement || d.webkitFullscreenElement || d.mozFullScreenElement);
+    };
+
     Fullscreen.prototype.exitFullscreen = function() {
-        if (document.exitFullscreen) {
-            document.exitFullscreen();
-        } else if (document.msExitFullscreen) {
-            document.msExitFullscreen();
-        } else if (document.mozCancelFullScreen) {
-            document.mozCancelFullScreen();
-        } else if (document.webkitExitFullscreen) {
-            document.webkitExitFullscreen();
+        if (this.fullscreenEnabled()) {
+          if (document.exitFullscreen) {
+              document.exitFullscreen();
+          } else if (document.msExitFullscreen) {
+              document.msExitFullscreen();
+          } else if (document.mozCancelFullScreen) {
+              document.mozCancelFullScreen();
+          } else if (document.webkitExitFullscreen) {
+              document.webkitExitFullscreen();
+          }
         }
     };
 
